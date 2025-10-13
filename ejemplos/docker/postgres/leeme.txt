@@ -1,0 +1,13 @@
+Imagen oficial PostgreSQL:
+--------------------------
+
+- https://hub.docker.com/_/postgres
+
+
+Algunos comandos útiles:
+------------------------
+
+# Ejecuta cliente sql (psql)
+docker compose exec db psql -h localhost -d postgres
+
+# Accede a Adminer en https://localhost:9000

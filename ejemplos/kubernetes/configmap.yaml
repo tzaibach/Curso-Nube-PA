@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mi-configmap
+data:
+  modo: produccion
+  puerto: "8080"
