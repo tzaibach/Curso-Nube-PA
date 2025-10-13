@@ -2,6 +2,10 @@
 
 Este repositorio contiene ejemplos prácticos, recursos y enlaces útiles para el curso de introducción a contenedores Docker y orquestación con Kubernetes.
 
+`tinyurl.com/cursonubePA`
+
+![QR del curso](img/QR-cursonubepa.png)
+
 ## ⚙️ Antes de comenzar
 
 Para preparar tu entorno de laboratorio, sigue estos pasos según tu sistema operativo:
