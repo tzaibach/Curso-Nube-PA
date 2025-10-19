@@ -60,3 +60,4 @@ Para preparar tu entorno de laboratorio, sigue estos pasos según tu sistema ope
 - Al terminar, elimina los contenedores sobrantes y limpia el sistema:
   - `docker rm ...`
   - `docker system prune`
+  - `docker volume prune`
