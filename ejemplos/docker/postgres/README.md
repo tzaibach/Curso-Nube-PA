@@ -1,12 +1,12 @@
-# Ejemplo de docker-compose.yml para PostgreSQL
+# Ejemplo de PostgreSQL con Docker Compose
 
 Este directorio contiene un ejemplo de PostgreSQL ejecutado con Docker Compose.
 
-Descripción del fichero docker-compose.yml
+## Descripción del fichero docker-compose.yml
 - Servicio `db`: imagen oficial `postgres:15` el puerto 5432 estableciendo la variable de entorno `POSTGRES_PASSWORD`.
 - Servicio `adminer`: interfaz web para administrar bases de datos (Adminer) en el puerto 9000.
 
-Cómo iniciarlo
+### Cómo iniciarlo
 1. Sitúate en este directorio:
    ```bash
    cd ejemplos/docker/postgres
@@ -25,13 +25,13 @@ Cómo iniciarlo
    - contraseña: `postgres`
    - base de datos: `postgres`
 
-Cómo pararlo
+### Cómo pararlo
 - Para detener y eliminar los contenedores, redes y volúmenes creados por Compose:
   ```bash
   docker compose down
   ```
 
-Comandos útiles
+## Comandos útiles
 - Ver logs:
   ```bash
   docker compose logs -f
@@ -45,6 +45,6 @@ Comandos útiles
   docker compose exec db psql -U postgres
   ```
 
-Notas
+## Notas
 - Instrucciones de la imagen Docker oficial para PostgreSQL:
   - https://hub.docker.com/_/postgres
