@@ -46,12 +46,17 @@ Para preparar tu entorno de laboratorio, sigue estos pasos según tu sistema ope
 
 - [Labs interactivos de Docker (KodeKloud)](https://kodekloud.com/pages/free-labs/docker/docker-basic-commands)
 - [Tutoriales prácticos de contenedores (Iximiuz)](https://labs.iximiuz.com/tutorials)
+- [Ejemplos de apps con Docker Compose (Awesome Compose)](https://github.com/docker/awesome-compose)
 - [Documentación oficial de Docker](https://docs.docker.com/)
 - [Documentación oficial de Kubernetes](https://kubernetes.io/docs/)
 
 ## 🧠 Recomendaciones
 
-- Usa etiquetas versionadas en tus imágenes (`miapp:1.0.0`)
-- Evita usar `latest` en producción
-- Aplica RBAC para proteger ConfigMaps y Secrets
-- Usa operadores para gestionar aplicaciones stateful
+- Para acceder a ficheros locales y/o persistir datos, mapea directorios o volúmenes:
+  - `docker run -v ...`
+  - `docker volume create ...`
+- Elimina automáticamente los contenedores cuando se detengan:
+  - `docker run --rm ...`
+- Al terminar, elimina los contenedores sobrantes y limpia el sistema:
+  - `docker rm ...`
+  - `docker system prune`

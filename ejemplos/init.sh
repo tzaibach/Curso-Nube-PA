@@ -11,9 +11,9 @@ docker run -d -p 8080:80 --name nginx-curso curso-nginx
 echo "🗄️ Levantando PostgreSQL..."
 docker compose -f ./docker/postgres/docker-compose.yml up -d
 
-# Docker: levantar Redis
-echo "⚡ Levantando Redis..."
-docker compose -f ./docker/redis/docker-compose.yml up -d
+# Docker: levantar Redis + Flask
+echo "⚡ Levantando Redis + Flask..."
+docker compose -f ./docker/flask-redis/compose.yaml up -d
 
 # Kubernetes: aplicar ConfigMap y Secret
 echo "🔐 Aplicando ConfigMap y Secret en Kubernetes..."
