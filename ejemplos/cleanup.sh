@@ -10,6 +10,7 @@ docker rm nginx-curso
 echo "🗑️ Eliminando contenedores de docker-compose..."
 docker compose -f ./docker/postgres/docker-compose.yml down
 docker compose -f ./docker/flask-redis/compose.yaml down
+docker compose -f ./docker/wordpress/docker-compose.yml down
 
 # Kubernetes: eliminar recursos
 echo "🧼 Eliminando recursos de Kubernetes..."

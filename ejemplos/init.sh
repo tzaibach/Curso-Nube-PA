@@ -15,6 +15,10 @@ docker compose -f ./docker/postgres/docker-compose.yml up -d
 echo "⚡ Levantando Redis + Flask..."
 docker compose -f ./docker/flask-redis/compose.yaml up -d
 
+# Docker: levantar Wordpress
+echo "🌐 Levantando WordPress..."
+docker compose -f ./docker/wordpress/docker-compose.yml up -d
+
 # Kubernetes: aplicar ConfigMap y Secret
 echo "🔐 Aplicando ConfigMap y Secret en Kubernetes..."
 kubectl apply -f ./kubernetes/configmap.yaml
