@@ -3,5 +3,14 @@ kind: ConfigMap
 metadata:
   name: mi-configmap
 data:
-  modo: produccion
-  puerto: "8080"
+  nginx_status.conf: |
+    server {
+        listen 80;
+        server_name localhost;
+
+        location /nginx_status {
+              stub_status on;
+              access_log  on;           
+              allow all;  # REPLACE with your access policy
+        }
+    }
